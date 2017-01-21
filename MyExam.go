@@ -23,6 +23,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
@@ -51,7 +52,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string
 	if len(args) != 1 {
 		return nil, errors.New("Incorrect number of arguments. Expecting 1")
 	}
-    err:= stub.putState("Hello World")
+
 	return nil, nil
 }
 
