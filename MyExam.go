@@ -19,11 +19,7 @@ package main
 import (
 	"errors"
 	"fmt"
-    "encoding/json"
-	"log"
-	"net/http"
-	"net/url"
-	
+	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
 // SimpleChaincode example simple Chaincode implementation
